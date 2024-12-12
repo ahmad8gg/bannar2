@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Digital Planner 2024</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Main container */
+        .planner-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        /* Header */
+        .planner-header {
+            text-align: center;
+            background: linear-gradient(135deg, #6a7dd2, #ff8e5b);
+            color: white;
+            padding: 40px 0;
+            border-radius: 10px;
+        }
+
+        .planner-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .planner-header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+        }
+
+        /* Content sections */
+        .planner-section {
+            margin: 30px 0;
+        }
+
+        .planner-section h2 {
+            font-size: 1.5rem;
+            color: #444;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid #6a7dd2;
+            padding-bottom: 10px;
+        }
+
+        /* Monthly Calendar */
+        .calendar-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .calendar-table th, .calendar-table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .calendar-table th {
+            background-color: #6a7dd2;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .calendar-table td {
+            font-size: 1rem;
+            background-color: #f9f9f9;
+        }
+
+        .calendar-table td.empty {
+            background-color: #eaeaea;
+        }
+
+        /* Weekly Schedule */
+        .weekly-table th, .weekly-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .weekly-table th {
+            background-color: #ff8e5b;
+            color: white;
+        }
+
+        .weekly-table td {
+            background-color: #f9f9f9;
+            font-size: 1rem;
+        }
+
+        /* Goals section */
+        .goals-section {
+            background-color: #f2f8ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #6a7dd2;
+        }
+
+        .goals-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .goals-section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Notes section */
+        .notes-section {
+            background-color: #fff8e1;
+            border-left: 5px solid #ff8e5b;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        .notes-section textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            resize: none;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .planner-container {
+                margin: 10px;
+                padding: 20px;
+            }
+
+            .planner-header h1 {
+                font-size: 2rem;
+            }
+
+            .planner-header p {
+                font-size: 1rem;
+            }
+
+            .planner-section h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="planner-container">
+        <!-- Header Section -->
+        <div class="planner-header">
+            <h1>Digital Planner 2024</h1>
+            <p>Stay Organized and Productive</p>
+        </div>
+
+        <!-- Monthly Calendar Section -->
+        <div class="planner-section">
+            <h2>Monthly Calendar</h2>
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="empty"></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <!-- Additional rows can be added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Weekly Schedule Section -->
+        <div class="planner-section">
+            <h2>Weekly Schedule</h2>
+            <table class="weekly-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00 AM</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- Additional rows can be added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Goals Section -->
+        <div class="planner-section goals-section">
+            <h2>Your Goals</h2>
+            <ul>
+                <li><input type="checkbox"> Goal 1: Example goal</li>
+                <li><input type="checkbox"> Goal 2: Another example</li>
+                <li><input type="checkbox"> Goal 3: Add your own</li>
+            </ul>
+        </div>
+
+        <!-- Notes Section -->
+        <div class="planner-section notes-section">
+            <h2>Notes</h2>
+            <textarea placeholder="Write your notes here..."></textarea>
+        </div>
+    </div>
+
+</body>
+</html>
